@@ -1,0 +1,27 @@
+﻿  Laba2_individ.cpp
+C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(46,17): warning C4490: override: неправильное использование спецификатора переопределения; "Document::CompareTo" не соответствует методу базового класса-ссылки
+  (компиляция исходного файла "/Laba2_individ.cpp")
+      C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(46,17):
+      "new" или "override" разрешены только, когда существует соответствующий базовый метод из класса ref
+      C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(46,17):
+      Соответствующий базовый метод "System::IComparable<Document ^>::CompareTo" происходит из класса интерфейса (а не класса ref)
+  
+C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(7,18): warning C4570: Document: не был объявлен явно как абстрактный, однако содержит абстрактные функции
+  (компиляция исходного файла "/Laba2_individ.cpp")
+      C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(7,18):
+      System::String ^Document::GetDocumentType(void): абстрактный
+      C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(42,21):
+       см. объявление "Document::GetDocumentType"
+      C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(7,18):
+      System::String ^Document::ToCSV(void): абстрактный
+      C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(43,21):
+       см. объявление "Document::ToCSV"
+  
+C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(212,36): warning C4566: символ, представленный универсальным именем символа "\u26A0", невозможно представить в текущей кодовой странице (1251)
+  (компиляция исходного файла "/Laba2_individ.cpp")
+  
+C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\Laba2_individ.cpp(212,36): warning C4566: символ, представленный универсальным именем символа "\uFE0F", невозможно представить в текущей кодовой странице (1251)
+  (компиляция исходного файла "/Laba2_individ.cpp")
+  
+  AssemblyInfo.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Laba2_individ.vcxproj -> C:\Users\Анастасия\Desktop\proga\3sem\programirovanie\laba2\Laba2_individ\x64\Debug\Laba2_individ.exe

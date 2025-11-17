@@ -1,0 +1,62 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Laba2_individ, Version=1.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Document: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IComparable`1[Document]
+  Properties:
+    Int32 Year 'get set' : 
+    System.String Author 'get set' : 
+    System.String Title 'get set' : 
+  Methods:
+    get_Title(): PrivateScope, Public, HideBySig, SpecialName
+    set_Title(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Author(): PrivateScope, Public, HideBySig, SpecialName
+    set_Author(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Year(): PrivateScope, Public, HideBySig, SpecialName
+    set_Year(Int32): PrivateScope, Public, HideBySig, SpecialName
+    GetDocumentType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ToCSV(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CompareTo(Document): PrivateScope, Public, Virtual, HideBySig
+Class Book: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Document
+    Void .ctor(System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetDocumentType(): PrivateScope, Public, Virtual, HideBySig
+    ToCSV(): PrivateScope, Public, Virtual, HideBySig
+Class Magazine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Document
+    Void .ctor(System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetDocumentType(): PrivateScope, Public, Virtual, HideBySig
+    ToCSV(): PrivateScope, Public, Virtual, HideBySig
+Class EBook: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Document
+    Void .ctor(System.String, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetDocumentType(): PrivateScope, Public, Virtual, HideBySig
+    ToCSV(): PrivateScope, Public, Virtual, HideBySig
+Class DocumentFactory: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    FromCSV(String): PrivateScope, Public, Static, HideBySig
+Class Library: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.List`1[Document] Documents 'get ' : 
+  Methods:
+    AddDocument(Document): PrivateScope, Public, HideBySig
+    get_Documents(): PrivateScope, Public, HideBySig, SpecialName
+    Sort(): PrivateScope, Public, HideBySig
+    ExportToCSV(String): PrivateScope, Public, HideBySig
+    ImportFromCSV(String): PrivateScope, Public, HideBySig
+    PrintCatalog(): PrivateScope, Public, HideBySig
