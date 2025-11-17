@@ -1,0 +1,5 @@
+Circle;3
+Rectangle;4;5
+Triangle;3;4;5
+Circle;1,5
+Rectangle;2;2,5

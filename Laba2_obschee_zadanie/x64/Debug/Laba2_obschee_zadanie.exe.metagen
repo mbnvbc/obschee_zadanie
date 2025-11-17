@@ -1,0 +1,60 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Laba2_obschee_zadanie, Version=1.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface IPrintable: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    Print(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Shape: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Area(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Perimeter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Print(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class Circle: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Shape
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    IPrintable
+  Fields:
+    Double r : Public
+  Methods:
+    Area(): PrivateScope, Public, Final, Virtual, HideBySig
+    Perimeter(): PrivateScope, Public, Final, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+    Print(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Rectangle: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Shape
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    IPrintable
+  Fields:
+    Double w : Public
+    Double h : Public
+  Methods:
+    Area(): PrivateScope, Public, Final, Virtual, HideBySig
+    Perimeter(): PrivateScope, Public, Final, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+    Print(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Triangle: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Shape
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    IPrintable
+  Fields:
+    Double a : Public
+    Double b : Public
+    Double c : Public
+  Methods:
+    Perimeter(): PrivateScope, Public, Final, Virtual, HideBySig
+    Area(): PrivateScope, Public, Final, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+    Print(): PrivateScope, Public, Final, Virtual, HideBySig
